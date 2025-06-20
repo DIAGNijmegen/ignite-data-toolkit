@@ -1,0 +1,13 @@
+matplotlib
+scikit-learn
+scikit-image
+seaborn
+wget
+simple-cocotools
+pycocotools
+ultralytics
+opencv-python-headless
+albumentations
+torch
+torchvision
+yolov5 @ git+https://github.com/DIAGNijmegen/yolov5_pdl1
