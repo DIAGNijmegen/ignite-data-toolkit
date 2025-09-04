@@ -4,7 +4,7 @@
 
 ### Repository layout
 
-Welcome to the Github repository for the IGNITE data toolkit. Here we store the code to download all data from the associated [Zenodo data repository](https://zenodo.org/records/15674785), in addition to code used for the technical validation of the toolkit. The repository is layed out as follows:
+Welcome to the Github repository for the IGNITE data toolkit. Here we store the code to download all data from the associated [Zenodo data repository](https://zenodo.org/records/15674785), in addition to code used for the technical validation of the toolkit. The repository is laid out as follows:
 
 * The [`data/`](data/) folder starts out empty and is populated with files after running the [`download_all.sh`](download_all.sh) shell script. Each of the subdirectories of [`data/`](data/) is layed like this:
 ```bash
@@ -18,7 +18,7 @@ Welcome to the Github repository for the IGNITE data toolkit. Here we store the 
 ```
 with `images/` containing PNG images of the regions of interest (ROIs) released in the toolkit; `annotations/` contains single-channel PNG masks for the H&E tissue compartment segmentation dataset and MS COCO-formatted JSON files for the nuclei/PD-L1 positive tumor cell detection datasets; `models/` contains the weights for our final models used for the technical validation of the toolkit. `inference/` contains raw inference of the models for the respective datasets; `figures/` contains neatly visualized inference and evaluation metric figures from our paper.
 
-* The [`code/`](data/) contains Python code for running inference on the respective test sets of each of the three datasets.
+* The [`code/`](code/) contains Python code for running inference on the respective test sets of each of the three datasets.
 
 We describe additional details regarding the datasets on our [Zenodo data repository](https://zenodo.org/records/15674785).
 
@@ -32,7 +32,16 @@ We describe additional details regarding the datasets on our [Zenodo data reposi
 ### Citation & license
 This Github repository is released under the [Apache-2.0 license](LICENSE) license. The data of the IGNITE data toolkit is released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-If you use this dataset, please cite:
+If you use this dataset, please cite: Spronck, J., van Eekelen, L., et al. A tissue and cell-level annotated H&E and PD-L1 histopathology image dataset in non-small cell lung cancer. https://doi.org/10.48550/arXiv.2507.16855
+
 ```
-<PREPRINT FORTHCOMING>
+@misc{spronck2025tissuecelllevelannotatedhe,
+      title={A tissue and cell-level annotated H&E and PD-L1 histopathology image dataset in non-small cell lung cancer}, 
+      author={Joey Spronck and Leander van Eekelen and Dominique van Midden and Joep Bogaerts and Leslie Tessier and Valerie Dechering and Muradije Demirel-Andishmand and Gabriel Silva de Souza and Roland Nemeth and Enrico Munari and Giuseppe Bogina and Ilaria Girolami and Albino Eccher and Balazs Acs and Ceren Boyaci and Natalie Klubickova and Monika Looijen-Salamon and Shoko Vos and Francesco Ciompi},
+      year={2025},
+      eprint={2507.16855},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.QM},
+      url={https://arxiv.org/abs/2507.16855}, 
+}
 ```
